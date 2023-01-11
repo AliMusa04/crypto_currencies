@@ -1,0 +1,189 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 41, 1) 0%,
+    rgba(180, 166, 60, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100%;
+}
+
+section {
+  padding-top: 50px;
+  .pagination {
+    margin-top: 15px;
+    display: flex;
+  }
+}
+table {
+  padding: 0;
+  border-collapse: collapse;
+  thead,
+  th {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(87, 84, 84);
+    cursor: pointer;
+  }
+  .crypto_img {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .hover_class {
+    &:hover {
+      background-color: #b1b1b1;
+      cursor: pointer;
+    }
+  }
+  .coin_class {
+    padding-left: 20px;
+    text-align: start;
+    width: 200px;
+    &:hover {
+      background-color: #b1b1b1;
+    }
+  }
+  tbody,
+  td {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.coin_price {
+  color: gold !important;
+  font-weight: 600;
+}
+
+.div_contanier {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  .div_head {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: rgb(17, 17, 17);
+      font-size: 35px;
+    }
+    .input_div {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      input {
+        padding: 10px 25px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  .div_table {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 20px;
+    background-color: white;
+    width: 1050px;
+    height: 600px;
+    scrollbar-color: red;
+    scroll-snap-type: initial;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 15px;
+    border-radius: 10px;
+    table {
+      width: 1100px;
+      position: relative;
+      thead {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+      }
+    }
+  }
+  .button_class {
+    text-align: start;
+    button {
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.4s;
+      border-radius: 5px;
+      background-color: rgba(28, 216, 28, 0.7);
+      &:hover {
+        color: rgba(28, 216, 28, 0.7);
+        background-color: white;
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(94, 102, 59, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.contanierPag {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(249, 250, 250);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    &:hover {
+      background-color: chartreuse;
+      color: white;
+    }
+  }
+}
+.active {
+  transform: scale(0.8);
+}

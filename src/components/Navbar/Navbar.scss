@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// .img_div_back {
+//   z-index: -1;
+//   height: 100vh;
+//   background-image: url("https://img.freepik.com/free-photo/cryptocurrency-coding-digital-blue-background-open-source-blockchain-concept_53876-124644.jpg?w=2000");
+//   background-size: cover;
+// }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000c66;
+  .img_div {
+    img {
+      width: 450px;
+    }
+  }
+  .link_div {
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 20px;
+      font-size: 35px;
+      li {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        &:hover {
+          color: #e1c340;
+        }
+        .count {
+          position: absolute;
+          top: -3px;
+          right: -6px;
+          font-size: 20px;
+          color: white;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        &:hover {
+          color: #e1c340;
+        }
+        span:hover {
+          color: #e1c340;
+        }
+      }
+    }
+  }
+}
